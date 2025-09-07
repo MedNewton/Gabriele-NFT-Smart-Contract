@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract NFTCollection is ERC721URIStorage, Ownable {
     uint256 private _tokenIds;
 
-    constructor() ERC721("BaseNiftyNaplesCollection", "BNNC") Ownable(msg.sender) {}
+    constructor() ERC721("Gabirele Base Sepolia Collection", "GMC") Ownable(msg.sender) {}
 
     function mintNFT(address recipient, string memory tokenURI) external onlyOwner returns (uint256) {
         _tokenIds++;
